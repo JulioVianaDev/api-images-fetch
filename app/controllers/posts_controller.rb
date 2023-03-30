@@ -39,7 +39,7 @@ class PostsController < ApplicationController
   end
 
   def latest
-    @latest = Post.last.to_json(include: [:image]) 
+    @latest = Post.last.to_json(include: [:image_url]) 
     render json: @latest
   end
   private
