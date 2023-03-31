@@ -39,9 +39,10 @@ class PostsController < ApplicationController
   end
 
   def latest
-    @latest = Post.last.to_json(include: [:image_url]) 
-    render json: @latest
+    @latest = Post.last
+    render json: PostSerializer.new(@latest).serializable_hash[:data][:attributes]
   end
+ 
   private
     # Use callbacks to share common setup or constraints between actions.
     def set_post
