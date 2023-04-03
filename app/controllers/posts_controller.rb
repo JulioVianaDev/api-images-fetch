@@ -20,7 +20,7 @@ class PostsController < ApplicationController
     if @post.save
       # render json: @post, status: :created, location: @post
 
-      render json: PostSerializer.new(@post ).serializable_hash[:data][:attributes]
+      render json: PostSerializer.new(@post).serializable_hash[:data][:attributes]
     else
       render json: @post.errors, status: :unprocessable_entity
     end
