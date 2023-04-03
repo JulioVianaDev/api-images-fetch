@@ -1,4 +1,5 @@
 Rails.application.routes.draw do
+  resources :frames
   resources :posts
 
   get 'latest', to: "posts#latest"
