@@ -10,7 +10,7 @@ class FramesController < ApplicationController
 
   # GET /frames/1
   def show
-    render json: @frame
+    render json: @frame.as_json(include: :images)
   end
 
   # POST /frames
@@ -46,6 +46,6 @@ class FramesController < ApplicationController
 
     # Only allow a list of trusted parameters through.
     def frame_params
-      params.fetch(:frame, {})
+      params.require(:frame).permit(images: [])
     end
 end
