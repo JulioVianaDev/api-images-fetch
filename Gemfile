@@ -49,3 +49,5 @@ end
 
 
 gem "jsonapi-serializer", "~> 2.2"
+
+gem "dockerfile-rails", ">= 1.2", :group => :development
