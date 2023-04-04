@@ -1,24 +1,7 @@
-# README
+# Api para treino com vanilla js
 
-This README would normally document whatever steps are necessary to get the
-application up and running.
+### Clique na imagem para ir até a api e ler a documentação
 
-Things you may want to cover:
-
-* Ruby version
-
-* System dependencies
-
-* Configuration
-
-* Database creation
-
-* Database initialization
-
-* How to run the test suite
-
-* Services (job queues, cache servers, search engines, etc.)
-
-* Deployment instructions
-
-* ...
+<a href="https://fetch-images-api.fly.dev">
+  <img src="/api.png">
+</a>
